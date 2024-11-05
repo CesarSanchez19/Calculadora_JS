@@ -143,6 +143,14 @@ button:hover {
     background: #FF6500; /* Fondo más oscuro al pasar el mouse */
 }
 
+.retroceder {
+    background: #ee7267; /* Fondo base para operadores */
+}
+
+.retroceder:hover {
+    background: #d03f3a; /* Fondo más oscuro al pasar el mouse */
+}
+
 .igual {
     background: #DBD3D3; /* Fondo gris claro para el botón igual */
     grid-column: span 2; /* Ocupa dos columnas */
