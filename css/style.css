@@ -96,10 +96,12 @@ h1 {
 }
 
 .calculadora {
-    background-color: #1E3E62; /* Fondo de la calculadora */
-    padding: 20px; /* Relleno interno de la calculadora */
-    border-radius: 10px; /* Bordes redondeados de la calculadora */
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la calculadora */
+    background-color: #1E3E62;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    width: 450px; /* Fija el ancho de la calculadora*/
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
 }
 
 .pantalla {
