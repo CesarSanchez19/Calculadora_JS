@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Importa la fuente Poppins desde Google Fonts */
+
+:root {
+    --primary_color: #A0D683; /* Define el color primario */
+    --secondary_color: #091057; /* Define el color secundario */
+    --hover_color: #F3C623; /* Define el color para hover */
+}
+
+@media (max-width: 820px) {
+    /* Media query para pantallas de ancho máximo de 820px */
+    .navbar-nav {
+        background-color: #387478; /* Fondo del menú de navegación en pantallas pequeñas */
+        padding: 20px; /* Espaciado interno del menú */
+        border-radius: 10px; /* Bordes redondeados del menú */
+        margin-top: 10px; /* Margen superior del menú */
+    }
+
+    .nav-link {
+        text-align: center; /* Centra el texto de los enlaces */
+        justify-content: center; /* Centra el contenido de los enlaces */
+        margin: 5px 0; /* Margen vertical entre enlaces */
+    }
+
+    .nav-link::after {
+        display: none; /* Oculta el subrayado en pantallas pequeñas */
+    }
+
+    .footer {
+        text-align: center; /* Centra el texto del pie de página */
+    }
+
+    .social-icons {
+        margin-top: 20px; /* Margen superior para los íconos sociales */
+    }
+}
+
+* {
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total del elemento */
+    font-family: 'Poppins', Arial, sans-serif; /* Define la fuente para todos los elementos */
+}
+
+body {
+    min-height: 100vh; /* Altura mínima de 100% de la vista */
+    display: flex; /* Usa flexbox para el cuerpo */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    margin: 0; /* Elimina el margen del cuerpo */
+    justify-content: center; /* Centra verticalmente los elementos */
+    background-color: #b0d49d; /* Fondo del cuerpo */
+}
+
+.contenedor-principal {
+    flex-grow: 1; /* Permite que el contenedor crezca para llenar el espacio disponible */
+    display: flex; /* Usa flexbox en el contenedor principal */
+    flex-direction: column; /* Dirección en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Relleno interno */
+}
+
+.navbar {
+    background-color: var(--secondary_color); /* Fondo de la barra de navegación */
+    padding: 15px 0; /* Espaciado vertical interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra debajo de la barra */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Texto en negrita para la marca */
+    color: #fff !important; /* Color blanco para el texto */
+    font-size: 24px; /* Tamaño de la fuente de la marca */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.nav-link {
+    color: #ecf0f1 !important; /* Color del texto de los enlaces */
+    font-weight: 500; /* Peso de la fuente semi-negrita */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    padding: 10px 15px !important; /* Relleno interno de los enlaces */
+    margin: 0 5px; /* Margen horizontal entre enlaces */
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+.nav-link:hover {
+    color: var(--hover_color) !important; /* Cambia el color al pasar el mouse */
+}
+
+h1 {
+    margin-bottom: 20px; /* Margen inferior del título */
+    font-size: 30px; /* Tamaño de la fuente del título */
+    font-weight: 800; /* Texto en negrita */
+    color: var(--secondary_color); /* Color del título */
+}
+
+.calculadora {
+    background-color: #1E3E62; /* Fondo de la calculadora */
+    padding: 20px; /* Relleno interno de la calculadora */
+    border-radius: 10px; /* Bordes redondeados de la calculadora */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la calculadora */
+}
+
+.pantalla {
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 80px; /* Altura de la pantalla */
+    border: none; /* Sin borde */
+    background: #ffffff; /* Fondo blanco */
+    margin-bottom: 10px; /* Margen inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: right; /* Alineación del texto a la derecha */
+    padding: 20px; /* Relleno interno */
+    font-size: 30px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+.botones {
+    display: grid; /* Usa grid para los botones */
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
+    gap: 10px; /* Espaciado entre botones */
+}
+
+button {
+    min-height: 60px; /* Altura mínima para los botones */
+    font-size: 20px; /* Tamaño de la fuente de los botones */
+    font-weight: bold; /* Texto en negrita para los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    background: #eee; /* Fondo gris claro */
+}
+
+button:hover {
+    background: #ddd; /* Fondo más oscuro al pasar el mouse */
+}
+
+.operador {
+    background: #F59C2F; /* Fondo naranja para operadores */
+}
+
+.operador:hover {
+    background: #FF6500; /* Fondo más oscuro al pasar el mouse */
+}
+
+.igual {
+    background: #DBD3D3; /* Fondo gris claro para el botón igual */
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.igual:hover {
+    background: #FF6500; /* Fondo más oscuro al pasar el mouse */
+}
+
+.footer {
+    background: #121155; /* Fondo del pie de página */
+    color: white; /* Color del texto blanco */
+    padding: 20px 0; /* Espaciado vertical interno */
+    text-align: center; /* Centra el texto */
+}
+
+.footer h5 {
+    color: #fff; /* Color blanco para el texto del título */
+    font-weight: 600; /* Peso de la fuente semi-negrita */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.footer p, .footer ul {
+    color: #fff; /* Color blanco para texto y listas */
+    font-weight: 300; /* Fuente ligera */
+}
+
+.social-icon {
+    font-size: 1.8rem; /* Tamaño de los íconos sociales */
+    margin-right: 20px; /* Margen derecho */
+    color: white; /* Color blanco */
+    transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+
+.social-icon:hover {
+    color: var(--hover_color); /* Cambia el color al pasar el mouse */
+    transform: translateY(-5px); /* Desplaza hacia arriba */
+}
+
+.footer a {
+    color: var(--primary_color); /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición de color suave */
+}
+
+.footer a:hover {
+    color: var(--hover_color); /* Cambia el color al pasar el mouse */
+}
+
+.footer-links li {
+    margin-bottom: 10px; /* Margen inferior de los elementos de lista */
+    transition: transform 0.3s ease; /* Transición de movimiento suave */
+}
+
+.footer-links li:hover {
+    transform: translateX(5px); /* Mueve 5px a la derecha al pasar el mouse */
+}
+
+.copyright {
+    background-color: #387478; /* Fondo para la sección de copyright */
+    padding: 15px 0; /* Espaciado vertical interno */
+    margin-top: 30px; /* Margen superior */
+}
+
+.container {
+    text-align: center; /* Centra el contenido del contenedor */
+}
