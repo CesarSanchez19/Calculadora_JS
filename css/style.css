@@ -162,6 +162,15 @@ button:hover {
     background: #FF6500; /* Fondo más oscuro al pasar el mouse */
 }
 
+.Limpiar {
+    background: #DBD3D3; /* Fondo gris claro para el botón C (limpiar) */
+    grid-column: span 1; /* Ocupa una columna */
+}
+
+.Limpiar:hover {
+    background: #FF6500; /* Fondo más oscuro al pasar el mouse */
+}
+
 .footer {
     background: #121155; /* Fondo del pie de página */
     color: white; /* Color del texto blanco */
